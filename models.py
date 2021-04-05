@@ -21,7 +21,7 @@ class Cupcake(db.Model):
     flavor = db.Column(db.String, nullable=False)
     size = db.Column(db.String, nullable=False)
     rating = db.Column(db.Float, nullable=False)
-    image = db.Column(db.String, nullable=False, default=DEFAULT_IMAGE)
+    image = db.Column(db.Text, nullable=False, default=DEFAULT_IMAGE)
 
 
     def serialize(self):

@@ -24,7 +24,7 @@ async function displayCupcakes() {
 }
 
 //handle form
-$('form').on('sumbit',async function (e) {
+$('form').on('submit',async function (e) {
     e.preventDefault();
     let flavor = $('#flavor').val()
     let rating = $('#rating').val()
